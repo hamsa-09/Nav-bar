@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Nav</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            /* display: flex; */
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+        .vertical {
+            flex-direction: column;
+            width: 20rem;
+            background-color: black;
+            height: 100vh;
+            color: aliceblue;
+            display: flex;
+            align-items: center;
+        }
+        .vertical li {
+            list-style: none;
+            padding: 1rem;
+        }
+        .vertical ul {
+            margin-top: 20px;
+            width: 100%;
+            padding: 0;
+        }
+        .vertical li a {
+            text-decoration: none;
+            color: aliceblue;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+        .vertical img {
+            height: 4rem;
+            width: 4rem;
+            border-radius: 50%;
+            margin-top: 2rem;
+        }
+        
+        .contents {  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+        }
+        .contents p {
+            max-width: 600px;
+            margin: 0 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="vertical">
+            <img src="hamsa.jpg" alt="image">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+        </nav>
+        <div class="contents">
+            <h1>Welcome to my portfolio</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt ea doloribus, eligendi asperiores incidunt aut veritatis error odit quasi aspernatur commodi. Molestiae eius illo consequatur consectetur sapiente obcaecati corporis.</p>
+        </div>
+    </div>
+</body>
+</html>
